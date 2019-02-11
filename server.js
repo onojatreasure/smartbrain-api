@@ -63,7 +63,7 @@ const database = {
 }
 
 app.get('/', (req, res)=> {
-    res.send(database.users);
+    res.send('it si working');
 })
 
 app.post('/register', (req, res) => {register.handleRegister(req, res, db, bcrypt)} )
